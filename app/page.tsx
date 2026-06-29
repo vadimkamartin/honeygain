@@ -346,11 +346,18 @@ export default function HoneygainLanding() {
                     href={referralLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto relative group overflow-hidden inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-black text-white bg-[#17B169] hover:bg-[#149558] rounded-2xl transition-all shadow-xl shadow-green-200 border-b-4 border-[#128a52] active:translate-y-1"
+                    className="w-full sm:w-auto relative group inline-flex items-center justify-center gap-3 px-8 py-4.5 text-base font-black text-white bg-gradient-to-r from-[#17B169] via-[#1ec478] to-[#149558] rounded-2xl transition-all duration-300 shadow-xl shadow-green-200/80 hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-1 hover:scale-[1.02] active:translate-y-0.5 active:scale-98 border-b-4 border-[#0f844d]"
                     id="hero-main-cta"
                   >
-                    <span className="relative z-10">ПОЛУЧИТЬ $3 НА СТАРТ</span>
-                    <ChevronRight className="w-5 h-5 relative z-10 transition-transform group-hover:translate-x-1" />
+                    {/* Glowing background blob on hover */}
+                    <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#17B169] to-emerald-400 opacity-0 group-hover:opacity-40 blur-xl transition-all duration-500 -z-10" />
+                    
+                    <span className="relative z-10 tracking-wider">ПОЛУЧИТЬ $3 НА СТАРТ</span>
+                    
+                    {/* Glassmorphic Arrow Container */}
+                    <span className="relative z-10 flex items-center justify-center w-6.5 h-6.5 rounded-full bg-white/20 border border-white/35 shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:bg-white/30">
+                      <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+                    </span>
                   </a>
 
                   <a 
