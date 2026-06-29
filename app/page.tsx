@@ -327,9 +327,9 @@ export default function HoneygainLanding() {
                 </div>
 
                 {/* Main Headline */}
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1] sm:leading-[1.15]">
+                <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] sm:leading-[1.12]">
                   Твой интернет <br className="hidden sm:inline" />
-                  может <span className="text-[#17B169]">приносить деньги.</span> <br />
+                  может <span className="bg-gradient-to-r from-[#17B169] to-emerald-500 bg-clip-text text-transparent">приносить деньги.</span> <br />
                   Узнай как.
                 </h1>
 

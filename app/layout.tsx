@@ -1,10 +1,18 @@
 import type {Metadata} from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Unbounded } from 'next/font/google';
 import './globals.css'; // Global styles
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
+  variable: '--font-sans',
+});
+
+const unbounded = Unbounded({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-display',
 });
 
 export const metadata: Metadata = {
@@ -14,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="ru" className={inter.className}>
+    <html lang="ru" className={`${inter.variable} ${unbounded.variable} ${inter.className}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{
