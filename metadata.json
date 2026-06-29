@@ -1,0 +1,6 @@
+{
+  "name": "Honeygain Landing Page",
+  "description": "A modern, high-converting responsive landing page designed to attract Honeygain referrals with passive income features, dynamic calculator, and trust signals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
